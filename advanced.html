@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced Search</title>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="../style/style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <h2 class="titulo-avanzada sans-text">Búsqueda avanzada</h2>
+        </nav>
+    </header>
+    <main>
+        <div class="container">
+            <form action="https://www.google.com/search" method="GET">
+                <div class="left">
+                    <div class="form">
+                        <label>Todas estas palabras:</label>
+                        <input type="text" name="as_q">
+                    </div>
+    
+                    <div class="form">
+                        <label>Esta palabra o frases exactas:</label>
+                        <input type="text" name="as_epq">
+                    </div>
+    
+                    <div class="form">
+                        <label>Cualquiera de estas palabras:</label>
+                        <input type="text" name="as_oq">
+                    </div>
+    
+                    <div class="form">
+                        <label>Ninguna de estas palabras</label>
+                        <input type="text" name="as_eq">
+                    </div>
+    
+                    <input type="submit" value="Búsqueda avanzada" class="busqueda-avanzada text-sans">
+                </div>
+            </form>
+        </div>
+    </main>
+</body>
+</html>
