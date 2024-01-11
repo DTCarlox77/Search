@@ -8,39 +8,50 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" href="../style/style.css">
+    <link rel="stylesheet" href="./style/style.css">
+    <link rel="shortcut icon" href="./icons/search_icon.svg" type="image/x-icon">
 </head>
 <body>
     <header>
         <nav>
-            <h2 class="titulo-avanzada sans-text">Búsqueda avanzada</h2>
+            <ul>
+                <li><a href="index.html" class="sans-text">Búsqueda de Google</a></li>
+                <li><a href="images.html" class="sans-text">Búsqueda de imágenes</a></li>
+            </ul>
         </nav>
     </header>
+    <div class="advanced">
+        <h2 class="titulo-avanzada sans-text">Búsqueda avanzada</h2>
+    </div>
+    <hr>
     <main>
         <div class="container">
             <form action="https://www.google.com/search" method="GET">
                 <div class="left">
+                    <label>Mostrar páginas que contengan...</label>
                     <div class="form">
                         <label>Todas estas palabras:</label>
-                        <input type="text" name="as_q">
+                        <input type="text" name="as_q" class="advanced_input" placeholder="Ingresa las palabras importantes.">
                     </div>
     
                     <div class="form">
                         <label>Esta palabra o frases exactas:</label>
-                        <input type="text" name="as_epq">
+                        <input type="text" name="as_epq" class="advanced_input" placeholder="Ingresa las palabras exactas entre comillas.">
                     </div>
     
                     <div class="form">
                         <label>Cualquiera de estas palabras:</label>
-                        <input type="text" name="as_oq">
+                        <input type="text" name="as_oq" class="advanced_input" placeholder="Ingresa OR entre las palabras que desees.">
                     </div>
     
                     <div class="form">
                         <label>Ninguna de estas palabras</label>
-                        <input type="text" name="as_eq">
+                        <input type="text" name="as_eq" class="advanced_input" placeholder='Ingresa un signo menos justo delante de las palabras que no deseas que aparezcan.'>
                     </div>
     
-                    <input type="submit" value="Búsqueda avanzada" class="busqueda-avanzada text-sans">
+                    <div class="submit-advanced">
+                        <input type="submit" value="Búsqueda avanzada" class="busqueda-avanzada text-sans">
+                    </div>
                 </div>
             </form>
         </div>
