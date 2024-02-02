@@ -16,7 +16,7 @@ Este proyecto tiene como objetivo diseñar una interfaz para la Búsqueda de Goo
 
 ## Video tutorial
 
-   **Youtube**: "Próximamente"
+   **Youtube**: https://youtu.be/zP6zYU9ISLk?si=0gFBR4dfWpHt1o0z
 
 ## Instrucciones para Desarrolladores
 
